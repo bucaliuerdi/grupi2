@@ -255,7 +255,61 @@ header.sticky{
 	left: 15px;
 	bottom: 60px;
 }
+.col-content P{
+	position: absolute;
+	font-size: 15px;
+	color: var(--bg-color);
+	left: 15px;
+	bottom: 30px;
+	letter-spacing: 2px;
+}
+.col-content img:hover{
+	filter: brightness(100%) hue-rotate(45deg);
+	transform: scale(1.04);
+	cursor: pointer;
+}
 
+#contact{
+	background: var(--main-color);
+}
+.main{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer{
+	padding: 20px 0;
+}
+.list{
+	width: 25%;
+}
+.list h4{
+	font-size: 21px;
+	color: var(--bg-color);
+	margin-bottom: 30px;
+	position: relative;
+}
+.list h4::before{
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 60px;
+	left: 0;
+	bottom: -10px;
+	background: var(--bg-color);
+}
+.list ul li:not(last-child) {
+	margin-bottom: 16px;
+}
+.list ul li a{
+	color: #ffffffbf;
+	font-size: var(--p-font);
+	display: block;
+	transition: .3s;
+}	
+.list ul li a:hover{
+	color: var(--bg-color);
+	transform: translateX(14px);
+}
 
 
 
